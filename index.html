@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bytec Cotizador</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tech.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="bg-fx"><span class="glow g1"></span><span class="glow g2"></span><span class="glow g3"></span></div>
+
+  <div class="app-shell">
+    <nav class="appnav">
+      <img class="logo-top" src="assets/bytec-logo-white.png" alt="ByTEC Security">
+      <img id="logo-blue" src="assets/bytec-logo.png" alt="" style="display:none;">
+      <div id="appnav-items"></div>
+      <div style="flex:1"></div>
+      <div class="live" id="syncind" style="padding:8px 12px;"><span class="pulse"></span> <span id="synctxt">datos locales</span></div>
+    </nav>
+
+    <main class="stage">
+      <div class="stage-inner" id="view"></div>
+    </main>
+  </div>
+
+  <!-- Supabase (cliente). Solo se activa si js/config.js trae credenciales. -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/doc.js"></script>
+  <script src="js/views-core.js"></script>
+  <script src="js/views-editor.js"></script>
+  <script src="js/views-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
